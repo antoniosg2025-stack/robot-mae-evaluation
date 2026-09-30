@@ -6,6 +6,12 @@
 **Activity:** Individual Extra-Credit Assignment  
 **Selected method:** Mean Absolute Error (MAE)
 
+**Project status:** Complete and ready for instructor evaluation.
+
+The author has completed the individual review and studied the supporting
+material to prepare for questions about the method, code, results, and
+limitations. The remaining step is the instructor's evaluation and final grade.
+
 ## 1. Project Objective
 
 This project extends Practical Lab 1 by evaluating the prediction errors of eight independent univariate linear regressions. Each regression uses elapsed time to predict one recorded robot measurement channel.
@@ -351,7 +357,7 @@ The three walkthrough topics are:
 2. Calculating and independently verifying MAE.
 3. Interpreting overall and group-specific results.
 
-Self-assessment scores are recorded in the notebook once the individual review is completed. They do not replace the instructor's assessment.
+The individual review is complete, and self-assessment scores are recorded in the notebook. The author has also completed the subsequent personal study and walkthrough preparation. The provisional self-assessment remains a record of the review at that time; it does not replace the instructor's assessment or final grade.
 
 Reviewers should verify the calculations and evidence rather than treating documentation claims as proof of correctness.
 
@@ -367,6 +373,11 @@ Reviewers should verify the calculations and evidence rather than treating docum
 - The original detector would require separate recalibration and evaluation before changing its predictor.
 
 ## 10. AI Assistance and Reproducibility Status
+
+Project preparation, documentation, individual review, and personal study
+are complete. The project is ready for instructor evaluation, including
+questions about the implementation and interpretation of the results.
+The final grade remains pending the instructor's assessment.
 
 AI assistance supported code drafting, explanations, interpretation,
 and review. The author executed the notebook and is responsible for
