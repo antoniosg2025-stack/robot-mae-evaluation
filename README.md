@@ -268,9 +268,16 @@ select the project's `.venv` kernel, restart the kernel, and run all cells.
 
 ### Reproduction status
 
-The author has confirmed successful interactive execution.
-The automated workflow above must still be tested in a fresh environment
-before submission. Record its actual outcome after that test.
+Clean-environment reproduction completed successfully in a separate
+GitHub checkout with a newly created virtual environment on the author's
+existing Windows computer.
+
+Dependency compatibility checks passed, all nine code cells executed
+without saved errors, and HTML export completed.
+
+See outputs/reproduction_check.json for the tested commit and results.
+This test verifies a fresh project environment on the same computer,
+not a different operating system or a machine without Python and Git.
 
 ## 6. Evaluation Method
 
@@ -361,12 +368,18 @@ Reviewers should verify the calculations and evidence rather than treating docum
 
 ## 10. AI Assistance and Reproducibility Status
 
-The author confirmed successful fresh-kernel interactive execution.
-Automated execution and HTML export also completed in the development
-environment. The executed notebook was checked for completed code cells
-and saved errors.
+AI assistance supported code drafting, explanations, interpretation,
+and review. The author executed the notebook and is responsible for
+checking and explaining the submitted work.
 
-Reproduction in a separate clean environment remains pending.
+Interactive execution, automated execution, and HTML export completed
+successfully. Reproduction also passed in a separate GitHub checkout
+with a newly created virtual environment on the author's existing
+Windows computer.
+
+The tested commit and verification results are recorded in
+outputs/reproduction_check.json. That record identifies the specific
+version tested.
 
 ## 11. Troubleshooting
 

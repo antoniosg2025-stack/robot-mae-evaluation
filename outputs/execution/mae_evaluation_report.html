@@ -8238,7 +8238,7 @@ for context. It is not a verified measure of machine activity.</p>
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr" tabindex="0">
-<pre>C:\Users\anton\AppData\Local\Temp\ipykernel_28808\33657054.py:53: UserWarning: obj.round has no effect with datetime, timedelta, or period dtypes. Use obj.dt.round(...) instead.
+<pre>C:\Users\anton\AppData\Local\Temp\ipykernel_13404\33657054.py:53: UserWarning: obj.round has no effect with datetime, timedelta, or period dtypes. Use obj.dt.round(...) instead.
   display(partition_summary.round(2))
 </pre>
 </div>
@@ -8612,7 +8612,7 @@ maximum error, or mechanical fault status.</p>
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr" tabindex="0">
-<pre>C:\Users\anton\AppData\Local\Temp\ipykernel_28808\605680199.py:36: UserWarning: obj.round has no effect with datetime, timedelta, or period dtypes. Use obj.dt.round(...) instead.
+<pre>C:\Users\anton\AppData\Local\Temp\ipykernel_13404\605680199.py:36: UserWarning: obj.round has no effect with datetime, timedelta, or period dtypes. Use obj.dt.round(...) instead.
   display(axis_1_details.head(10).round(4))
 </pre>
 </div>
@@ -9451,7 +9451,7 @@ contributions reproduce the overall difference between methods.</p>
 </div>
 </div>
 </div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=af8767c7">
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=3801f065">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -9460,53 +9460,80 @@ contributions reproduce the overall difference between methods.</p>
 <h2 id="12.-Individual-Self-Assessment">12. Individual Self-Assessment<a class="anchor-link" href="#12.-Individual-Self-Assessment">¶</a></h2><p>This section adapts the instructor's Code Walkthrough Peer Assessment
 rubric to the approved individual format. No peer review is claimed.</p>
 <p><strong>Author and self-reviewer:</strong> Antonio Sainz<br/>
-<strong>Selected method:</strong> Mean Absolute Error (MAE)</p>
-<p>Scores remain pending until the final execution and self-review.</p>
+<strong>Selected method:</strong> Mean Absolute Error (MAE)<br/>
+<strong>Assessment status:</strong> Provisional self-assessment for instructor review.</p>
 <table>
 <thead>
 <tr>
 <th>Criterion</th>
-<th>Evidence</th>
-<th>Score (1–3)</th>
+<th>Evidence location</th>
+<th style="text-align:right">Self-score</th>
+<th>Justification</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>Code accuracy</td>
-<td>Chronological split checks; direct MAE calculations verified against scikit-learn; weighted group reconstruction checks</td>
-<td>Pending</td>
+<td>Sections 2–5, 7, and 9; outputs/reproduction_check.json</td>
+<td style="text-align:right">3/3</td>
+<td>Direct calculations match scikit-learn within explicit tolerances. Partition and weighted reconstruction checks pass. Execution was reproduced in a separate checkout and virtual environment.</td>
 </tr>
 <tr>
 <td>Interpretation</td>
-<td>Recorded-unit interpretation; baseline comparison; group analysis; limitations</td>
-<td>Pending</td>
+<td>Sections 6, 9, and 10</td>
+<td style="text-align:right">3/3</td>
+<td>Results are explained in recorded units, compared with a training-mean baseline, and examined by observed group. Limitations distinguish prediction error from fault detection.</td>
 </tr>
 <tr>
 <td>Clarity of walkthrough</td>
-<td>Three talking points and the author's explanation of relevant code</td>
-<td>Pending</td>
+<td>Section 11 and the reflection below</td>
+<td style="text-align:right">2/3</td>
+<td>Three talking points are prepared. Further independent practice is needed to explain arbitrary code lines and weighted contributions confidently.</td>
 </tr>
 <tr>
 <td>Evidence and transparency</td>
-<td>Executed notebook, exported tables, figures, AI disclosure, and final repository documentation</td>
-<td>Pending</td>
+<td>Executed notebook, outputs/, README.md, and opening AI disclosure</td>
+<td style="text-align:right">3/3</td>
+<td>Tables, figures, execution instructions, reproduction evidence, and AI assistance are documented.</td>
 </tr>
 </tbody>
 </table>
-<p><strong>Total:</strong> Pending / 12</p>
-<h3 id="One-strength-supported-by-evidence">One strength supported by evidence<a class="anchor-link" href="#One-strength-supported-by-evidence">¶</a></h3><p>Direct MAE calculations are checked against scikit-learn. Additional
-checks verify that group results reconstruct the overall results.</p>
-<h3 id="One-improvement-to-investigate">One improvement to investigate<a class="anchor-link" href="#One-improvement-to-investigate">¶</a></h3><p>Evaluate a training-median baseline and additional recordings before
-drawing broader conclusions about predictive performance.</p>
+<p><strong>Provisional total: 11/12.</strong></p>
+<p>These scores are a self-assessment, not the instructor's final grade.
+The clarity score reflects a remaining learning objective.</p>
+<h3 id="One-strength-supported-by-evidence">One strength supported by evidence<a class="anchor-link" href="#One-strength-supported-by-evidence">¶</a></h3><p>Direct MAE calculations agree with scikit-learn. Additional checks
+reconstruct overall MAE from group results and explain the overall
+difference between the two prediction methods.</p>
+<h3 id="One-thing-to-improve">One thing to improve<a class="anchor-link" href="#One-thing-to-improve">¶</a></h3><p>Strengthen the independent explanation of group weighting and its
+implementation. A future analytical extension could compare a
+training-median baseline and evaluate additional recordings.</p>
 <h3 id="Line-by-line-self-review-question">Line-by-line self-review question<a class="anchor-link" href="#Line-by-line-self-review-question">¶</a></h3><p>Why is the overall MAE calculated as a count-weighted average of group
 MAEs rather than the simple average of those group MAEs?</p>
-<p><strong>Student's own answer:</strong> To be completed after self-review.</p>
-<h3 id="Final-review-status">Final review status<a class="anchor-link" href="#Final-review-status">¶</a></h3><ul>
-<li>Fresh-kernel execution: Completed. The author restarted the kernel, ran all cells, and confirmed that execution finished without errors.</li>
-<li>Review of exported evidence: Pending.</li>
-<li>Oral explanation practice: Pending.</li>
-<li>README and clean-environment reproduction: Pending.</li>
-<li>Final rubric scores: Pending.</li>
+<h3 id="Explanation-developed-during-AI-assisted-self-review">Explanation developed during AI-assisted self-review<a class="anchor-link" href="#Explanation-developed-during-AI-assisted-self-review">¶</a></h3><p>MAE is the average absolute error across individual observations.
+Each observation receives equal weight.</p>
+<p>When observations are divided into groups of different sizes, each
+group's MAE must be weighted by its observation count. A simple average
+of group MAEs would give equal weight to groups rather than observations.</p>
+<p>For Axis 1, the evaluation partition contains 4,416 zero observations
+and 3,519 positive observations:</p>
+<pre><code>overall MAE =
+    (4416 × zero-group MAE + 3519 × positive-group MAE) / 7935</code></pre>
+<p>These weights describe groups within Axis 1. They do not assign
+importance to Axis 1 relative to other channels.</p>
+<p>A weighted contribution measured in recorded units is not a percentage.
+For example, a contribution of 0.23 recorded units does not mean 23%.</p>
+<h3 id="Learning-reflection">Learning reflection<a class="anchor-link" href="#Learning-reflection">¶</a></h3><p>During the guided review, I initially confused weighted contributions
+with percentages across channels. The explanation clarified that MAE
+is the average absolute error and that group weighting preserves equal
+weight for individual observations. Further practice is needed to
+explain this distinction independently.</p>
+<h3 id="Verification-status">Verification status<a class="anchor-link" href="#Verification-status">¶</a></h3><ul>
+<li>Fresh-kernel interactive execution: Completed and confirmed by the author.</li>
+<li>Automated notebook execution and HTML export: Completed.</li>
+<li>Separate-checkout and fresh-environment reproduction: Completed.</li>
+<li>Reproduction evidence: outputs/reproduction_check.json.</li>
+<li>README setup and execution instructions: Documented.</li>
+<li>Independent oral explanation practice: In progress.</li>
 </ul>
 </div>
 </div>
